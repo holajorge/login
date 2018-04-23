@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons>
+      <img ion-right src="../../assets/imgs/juveBUS_48.png" class="navbarLogo" />
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title left>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-input type="text" placeholder="RFC" required [(ngModel)]="userData.rfc" nana="rfc"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" required [(ngModel)]="userData.password" nana="password"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button block (click)="iniciarSesion()">Iniciar Sesión</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
