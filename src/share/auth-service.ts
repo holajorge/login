@@ -11,7 +11,7 @@ export class AuthService {
     }
 
     public authUser(userData, type) {
-        let apiUrl = 'http://localhost/juveBus/';
+        let apiUrl = 'http://go-to-school.juventudqroo.com/';
         let options = {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'

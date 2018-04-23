@@ -21,7 +21,7 @@ export class LoginPage {
 
     public iniciarSesion() {
         if (this.userData.rfc && this.userData.password) {
-            this.authService.authUser(this.userData, 'login_ctrl/autenticateUser').subscribe(
+            this.authService.authUser(this.userData, 'login/autenticate-user').subscribe(
                 (result) => {
                     this.responseData = result['response'];
                     if (this.responseData) {
